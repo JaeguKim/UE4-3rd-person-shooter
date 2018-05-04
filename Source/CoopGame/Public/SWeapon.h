@@ -111,7 +111,7 @@ protected:
 
 protected:
 
-	void Fire();
+	virtual void Fire();
 
 	UFUNCTION(Server, Reliable, WithValidation)
 	void ServerFire();
