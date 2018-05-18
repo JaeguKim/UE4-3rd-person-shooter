@@ -40,6 +40,8 @@ protected:
 	void HandleTakeAnyDamage(AActor* DamagedActor, float Damage, const class UDamageType* DamageType, class AController* InstigatedBy, AActor* DamageCauser);
 
 public :
+	UFUNCTION(BlueprintCallable, Category = "HealthComponent")
+	bool Damage(float DamageAmount);
 
 	float GetHealth() const;
 
